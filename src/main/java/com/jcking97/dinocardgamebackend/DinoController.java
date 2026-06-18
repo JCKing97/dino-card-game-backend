@@ -1,5 +1,7 @@
 package com.jcking97.dinocardgamebackend;
 
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,10 +31,11 @@ public class DinoController {
         return new DinoCollectionMessage(dinos);
     }
 
-    @GetMapping("/dinoEquality")
+    @GetMapping("/dinos/allEqual")
     public DinoEqualityMessage getDinosEquality(@RequestBody DinoCollectionMessage dinos) {
-        Set<Dino> dinoSet = Set.of(dinos.getDinos());
-        return new DinoEqualityMessage(dinoSet.size() == 1);
+        long allDinos = dinos.getDinos().length;
+        long distinctDinos = Arrays.stream(dinos.getDinos()).distinct().count();
+        return new DinoEqualityMessage(allDinos == distinctDinos);
     }
 
 }

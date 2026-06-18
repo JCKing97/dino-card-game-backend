@@ -59,7 +59,7 @@ docker ps
 
 Open your browser or use a tool like Postman or cURL to test the endpoint:
 
-http://localhost:8080/api/hello
+http://localhost:8080/api/dinos?dinoCount=2
 
 You should see the response:
 

@@ -29,12 +29,4 @@ public class DinoRetriever {
         return dinosaurs.get(random.nextInt(dinosaurs.size()));
     }
 
-    /**
-     * Retrieves a list of all dinosaurs.
-     * @return A list of all dinosaur names.
-     */
-    public List<Dino> getAllDinos() {
-        return dinosaurs;
-    }
-
 }
