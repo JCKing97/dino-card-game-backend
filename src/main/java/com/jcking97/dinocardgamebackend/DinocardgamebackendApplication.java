@@ -1,13 +1,13 @@
-package com.jcking97.dinocardgame;
+package com.jcking97.dinocardgamebackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DinocardgameApplication {
+public class DinocardgamebackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DinocardgameApplication.class, args);
+		SpringApplication.run(DinocardgamebackendApplication.class, args);
 	}
 
 }

@@ -16,10 +16,10 @@ FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
 # Copy the built JAR from the builder stage
-COPY --from=builder /app/target/dinocardgame-0.0.1-SNAPSHOT.jar /app/dinocardgame.jar
+COPY --from=builder /app/target/dinocardgamebackend-0.0.1-SNAPSHOT.jar /app/dinocardgamebackend.jar
 
 # Expose the port the app runs on
 EXPOSE 8080
 
 # Run the JAR file
-ENTRYPOINT ["java", "-jar", "dinocardgame.jar"]
+ENTRYPOINT ["java", "-jar", "dinocardgamebackend.jar"]

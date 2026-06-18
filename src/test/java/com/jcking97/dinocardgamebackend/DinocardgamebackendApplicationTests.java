@@ -1,10 +1,10 @@
-package com.jcking97.dinocardgame;
+package com.jcking97.dinocardgamebackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DinocardgameApplicationTests {
+class DinocardgamebackendApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package com.jcking97.dinocardgame;
+package com.jcking97.dinocardgamebackend;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
