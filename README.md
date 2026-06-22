@@ -16,10 +16,8 @@ A simple Spring Boot application containerized with Docker. This project is the 
 
 Before you begin, ensure you have the following installed:
 
-- [Java JDK 17+](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html) (or OpenJDK 17)
-- [Maven 3.8+](https://maven.apache.org/download.cgi)
 - [Docker](https://www.docker.com/get-started)
-- An IDE (e.g., [IntelliJ IDEA](https://www.jetbrains.com/idea/), [Eclipse](https://www.eclipse.org/), or [VS Code](https://code.visualstudio.com/))
+- An IDE (e.g., [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [VS Code](https://code.visualstudio.com/))
 
 ---
 
@@ -61,8 +59,21 @@ Open your browser or use a tool like Postman or cURL to test the endpoint:
 
 http://localhost:8080/api/dinos?dinoCount=2
 
-You should see the response:
+You should see a JSON response like:
 
 ```json
-Hello, Docker!
+{
+  "dinos": [
+    {
+      "name": "Velociraptor",
+      "description": "Pack hunter!",
+      "image": "https://live.staticflickr.com/65535/55342202106_4fb61d2f13_c.jpg"
+    },
+    {
+      "name": "Brachiosaurus",
+      "description": "Gentle giant",
+      "image": "https://live.staticflickr.com/65535/55342406499_200e2b116b_c.jpg"
+    }
+  ]
+}
 ```
