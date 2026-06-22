@@ -1,4 +1,4 @@
-# Spring Boot + Docker Demo
+# Dino Card Game Backend
 
 A simple Spring Boot application containerized with Docker. This project is the backend of the dino card game.
 
