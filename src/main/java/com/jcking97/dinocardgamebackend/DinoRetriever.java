@@ -29,4 +29,12 @@ public class DinoRetriever {
         return dinosaurs.get(random.nextInt(dinosaurs.size()));
     }
 
+    /**
+     * Check if the dino name exists.
+     * @return True if the dino name exists, false otherwise.
+     */ 
+    public boolean exists(String dinoName) {
+        return dinosaurs.stream().anyMatch(dino -> dino.getName().equals(dinoName));
+    }
+
 }
